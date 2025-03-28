@@ -6,7 +6,7 @@ import pickle as pkl
 cliffEnv = gym.make('CliffWalking-v0', render_mode='human')
 
 # Load the pre-trained Q-table
-q_table = pkl.load(open('sarsa_q_table.pkl', 'rb'))
+q_table = pkl.load(open('./cliff walking/sarsa_q_table.pkl', 'rb'))
 
 def policy(state, explore_rate=0.0):
     action = int(np.argmax(q_table[state]))

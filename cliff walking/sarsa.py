@@ -52,4 +52,4 @@ while not done:
 
 cliffEnv.close()
 
-pkl.dump(q_table, open('sarsa_q_table.pkl', 'wb'))
+pkl.dump(q_table, open('./cliff walking/sarsa_q_table.pkl', 'wb'))
